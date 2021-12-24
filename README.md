@@ -22,10 +22,7 @@ Example Playbook
 Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
 
     tasks:
-       - name: "Collect logs"
-         inspur.sm.collect_log:
-         file_url: "/home/collected-logs/test.tar"
-         provider: "{{ *** }}"
+     
 
 
 ## Return Values
