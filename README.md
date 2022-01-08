@@ -2,37 +2,23 @@
 Role Name
 =========
 
-check-logs
-
-
+logs v1.0.0
 
 Role Variables
 --------------
 
-Collect logs on Inspur server,it takes about 5 minutes.
+Collect logs on Inspur server,it takes about 1m.
 
 Dependencies
 ------------
 
 copy the collected logs to folder 
+ths is the first version of the script 
 
 Example Playbook
 ----------------
 
 Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
 
-    tasks:
-     
-
-
-## Return Values
-
-Common return values are documented here, the following are the fields unique to this module:
-
-Key	Returned	Description
-
-Check to see if a change was made on the device.
-
-Messages returned after module execution.
-
-Status after module execution.
+  tasks:
+    - logs:  
