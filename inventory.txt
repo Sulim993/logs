@@ -1,0 +1,16 @@
+  GNU nano 4.8                        inventory                                 
+[master]
+192.168.1.140
+
+[nodes]
+192.168.1.138
+192.168.1.139
+
+[master:vars]
+ansible_ssh_user=username
+ansible_ssh_pass=userpass
+ansible_become_pass=sudopass
+[nodes:vars]
+ansible_ssh_user=username
+ansible_ssh_pass=userpass
+ansible_become_pass=sudopass

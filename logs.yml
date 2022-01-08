@@ -1,0 +1,5 @@
+---
+- name: "Requete dans une base"
+  hosts: nodes
+  tasks:
+    - newmod1:
