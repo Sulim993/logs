@@ -11,9 +11,9 @@ module: logs
 
 short_description: copy logs 
 
-version_added: "1.0.0"
+version_added: "1.0"
 
-description: copy logs to chosine destination and name it with current datetime
+description: copy logs to chosen destination and name it with current datetime
 
 author:
     - Your Name (sulim.obei@gmail.com)
@@ -21,7 +21,7 @@ author:
 
 EXAMPLES = r'''
 tasks
-  - newmod1:
+  - logs:
 
 '''
 
