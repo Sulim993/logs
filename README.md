@@ -30,11 +30,16 @@ Ubuntu builds are available in a PPA here.
 To configure the PPA on your machine and install Ansible run these commands:
 
 $ sudo apt update
+
 $ sudo apt install software-properties-common
+
 $ sudo add-apt-repository --yes --update ppa:ansible/ansible
+
 $ sudo apt install ansible
+
 How to install and configure Ansible on your System
-First, you need to install Ansible on your system. Just go to https://docs.ansible.com/ and follow the installation instructions for your Linux distribution. You can also set up this in a virtual machine or on Windows Subsystem for Linux.
+First, you need to install Ansible on your system. 
+Just go to https://docs.ansible.com/ and follow the installation instructions for your Linux distribution. You can also set up this in a virtual machine or on Windows Subsystem for Linux.
 
 I also installed 3 Ubuntu Servers in a virtual environment to demonstrate how Ansible is working.
 
