@@ -4,15 +4,10 @@ Role Name
 
 logs v1.0.0
 
-Role Variables
---------------
-
-Collect logs on Inspur server,it takes about 1m.
-
 Dependencies
 ------------
 
-copy the collected logs to folder 
+copy collected logs to folder 
 ths is the first version of the script 
 
 Example Playbook
