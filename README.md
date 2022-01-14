@@ -138,18 +138,15 @@ Ansible playbooks can describe even complex automation tasks simply and effectiv
 
 First, you need to start with a pattern of machines, you want to define a state for. You can also choose which user you want to use to execute any actions and if Ansible needs to execute commands with root privileges. For every pattern, you can describe one or more tasks to call Ansible modules. In the following example, we’re installing some software packages on the master server and nodes.
 
-Install packages . YAML
+Install packages . YAML :
 
-
-
-
-hosts: nodes
-become: yes
-tasks:
-    name: make sure net-tools are installed on all nodes
-    apt:
-      name: net-tools
-      state: present
+- hosts: nodes
+  become: yes
+  tasks:
+    - name: make sure net-tools are installed on all nodes
+      apt:
+        name: net-tools
+        state: present
   
 If you want to execute an Ansible playbook you need to use the command “ansible-playbook”. Note, that for installing software packages you need to become a root user. This can be done by the option “become”, which requires you to provide a “sudo” password either via the default or inventory configuration, or arguments in the command.
 
