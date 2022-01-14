@@ -139,6 +139,7 @@ First, you need to start with a pattern of machines, you want to define a state 
 
 Install packages.YAML
 
+
 ---
 - hosts: nodes
   become: yes
@@ -147,6 +148,7 @@ Install packages.YAML
     apt:
       name: net-tools
       state: present
+  
 If you want to execute an Ansible playbook you need to use the command “ansible-playbook”. Note, that for installing software packages you need to become a root user. This can be done by the option “become”, which requires you to provide a “sudo” password either via the default or inventory configuration, or arguments in the command.
 
 ansible-playbook installpackages.yaml -K
