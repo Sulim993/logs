@@ -22,6 +22,7 @@ Including an example of how to use your role (for instance, with variables passe
 
   tasks:
     - logs:  
+    
 Ansible Setup - Gather Facts - https://docs.ansible.com/ansible/latest/modules/setup_module.html
 
 It is very important when prompted for your username that you use username@MY.DOMAIN.COM. This whole string is case sensitive and the domain portion must be in upper case.
@@ -144,8 +145,8 @@ Install packages.YAML
 - hosts: nodes
   become: yes
   tasks:
-  - name: make sure net-tools are installed on all nodes
-    apt:
+    - name: make sure net-tools are installed on all nodes
+      apt:
       name: net-tools
       state: present
   
